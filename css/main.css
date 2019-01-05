@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Quicksand:300,400');
+
+    /*Site Styles*/
+    html, body {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .container-fluid, .row, .col-sm-12 {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    main {
+        font-size: 16px;
+        font-family: 'EB Garamond', serif;
+        font-weight: 200;
+    }
+    .wrapper img {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 2.75rem;
+        color: #c47327;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        font-family: 'Quicksand', sans-serif;
+        color: #888;
+        margin-top: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 0;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 200;
+        font-family: 'Quicksand', sans-serif;
+        color: #fff;
+    }
+    a {
+        color: #c47327
+    }
+    a:hover {
+        text-decoration: none;
+        color: #155268
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Helper Styles*/
+    .center {
+        text-align: center;
+    }
+    .flex-align {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .font--small {
+        font-size: .85rem;
+    }
+    .font--blue {
+        color: #155268;
+    }
+    .font--light {
+        font-weight: 200;
+    }
+    .font--white {
+        color: white;
+    }
+    .font--linespace {
+        line-height: 2.5rem;
+    }
+    .blue-bg {
+        background-color: #155268;
+        color: #fff;
+    }
+    .blue-bg a:hover {
+        color: #fff;
+    }
+    .light-bg {
+        background-color: #e0dfd5;
+        color: #888;
+    }
+    .dark-bg {
+        background-color: rgba(0,0,0,0.0);
+    }
+    .blue-bg-nav {
+        background-color: #155268;
+    }
+    .btn {
+        color: #fff;
+        border: none;
+        padding: 1rem 1.5rem;
+        box-shadow: none;
+        font-size: 1rem;
+        font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        border-radius: 0;
+        margin-top: 2rem;
+    }
+    .btn--ochre {
+        background-color: #c47327;
+    }
+    .btn--ochre {
+        border: 4px solid #c47327;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .btn--ochre:hover {
+        background: transparent;
+        color: #c47327;
+    }
+    .btn--2:hover {
+        background: transparent;
+        color: #fff;
+        border: 4px solid #fff;
+    }
+    .btn--1:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .grow {
+        transition: all .2s ease-in-out;
+    }
+    .grow:hover {
+        transform: scale(1.1);
+    }
+    .padding-top-nav-fix {
+        padding-top: 6rem !important;
+    }
+    .padding-sides {
+        padding: 0 1rem;
+    }
+    .padding-center {
+        padding: 1rem;
+    }
+    .padding-med {
+        padding: 2rem;
+    }
+    .padding-lg {
+        padding: 2rem;
+    }
+    .padding-bottom {
+        padding-bottom: 1rem !important;
+    }
+    .no-padding {
+        padding: 0;
+    }
+    .margin-bottom {
+        margin-bottom: 2.5rem;
+    }
+    .margin-top {
+        margin-top: .5rem;
+    }
+    .margin-no-top {
+        margin-top: -3.5rem;
+    }
+    .margin-left {
+        margin-left: 1rem;
+    }
+    .fixed {
+        position: fixed;
+    }
+    .absolute {
+        position: absolute;
+        bottom: 25px;
+    }
+    .relative {
+        position: relative;
+    }
+    .no-list-style ul {
+        list-style: none;
+    }
+    .horizontal-list li {
+        display: block;
+    }
+    .mobile-hide {
+        display: none;
+    }
+
+
+    /*Section Styles*/
+    nav {
+        padding: 1rem;
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        z-index: 99;
+        /*background: #E0DFD5;*/
+    }
+    nav a {
+        transition: color 500ms linear;
+    }
+    
+    .navigation {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .hide {
+        display: none;
+    }
+    .navigation ul {
+        margin: 0 auto;
+    }
+    .navigation li {
+        margin: .5rem;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .logo {
+        letter-spacing: .25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo i {
+        margin-top: 5px;
+    }
+    .logo a {
+        color: #fff;
+    }
+    #hero {
+        height: 400px;
+        background: #fff url('../img/mia-baker-322559-unsplash.jpg') no-repeat right;
+        background-size: cover;
+    }
+    .hero-box {
+        background: rgba(255,255,255,0.7);
+        padding: .5rem;
+    }
+    .welcome-text-wrapper {
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+    .welcome-text-wrapper p {
+        line-height: 1.8rem;
+    }
+    #portfolio img {
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,0.3);
+        margin: 2rem 0;
+    }
+    .publications-list ul {
+        list-style: none;
+    }
+    .publications-list li {
+        margin: 2.75rem auto;
+    }
+    .publication-title {
+        color: #c47327;
+        margin-bottom: .25rem;
+    }
+    .publication-date {
+        color: #155268;
+        font-weight: 600;
+    }
+    footer .col-sm-12 {
+        padding: 0;
+    }
+    .footer-info {
+        text-align: center;
+        padding: .5rem;
+    }
+    .social-circle {
+        background-color: #155268;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+    .footer-info a {
+        color: #fff;
+    }
+    .footer-info a:hover {
+        color: #c47327
+    }
+    .social-icons li {
+        margin: .5rem;
+        display: inline-block;
+    }
+    .ig-wrapper {
+        display: none;
+    }
+
+    /*About Page Styles*/
+    #heroAbout h1 {
+        margin-bottom: 2rem;
+    }
+    #aboutImg img {
+        max-width: 100%;
+        width: 550px;
+    }
+    #aboutSkills {
+        text-align: center;
+    }
+
+    /*Portfolio Page Styles*/
+    #portfolioTop h1 {
+        margin-bottom: 2rem;
+    }
+    #portfolioCards {
+        padding-top: 0;
+    }
+    #portfolioCards a {
+        color: #444;
+    }
+    .card--portfolio {
+        margin: 2rem 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    }
+    .portfolio-image img {
+        max-width: 100%;
+    }
+    .portfolio-text {
+        padding: 1rem;
+    }
+    .portfolio-text h2 {
+        margin-top: 1.5rem;
+        font-weight: 500;
+    }
+    .project--filters {
+        font-size: 1.25rem;
+        margin: 2rem auto;
+        font-style: italic;
+        font-weight: 200;
+    }
+
+
+
+    /*Media Queries*/
+    @media screen and (min-width:768px) {
+        #hero {
+            height: 600px;
+        }
+        #aboutSkills {
+            text-align: left;
+            margin-top: -3rem;
+        }
+        .padding-top-nav-fix {
+            padding-top: 2rem !important;
+        }
+        .publications-list {
+            padding-left: 0;
+        }
+        .margin-top-lg {
+            margin-top: 5.5rem;
+        }
+        .horizontal-list li {
+            display: inline-block;
+        }
+        .blue-bg-nav {
+            background-color: rgba(0,0,0,0.0);
+        }
+        .fade-in {
+            background-color: rgba(21,82,104,1);
+        }
+        .fade-in a {
+            color: #fff;
+            font-weight: 200;
+        }
+        .navigation {
+            display: block;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            transition: background-color 500ms linear;
+            z-index: 1;
+            width: 100%;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            /*background: #E0DFD5;*/
+        }
+        nav a {
+            transition: color 500ms linear;
+        }
+        .logo a {
+            color: #c47327;
+            font-weight: 600;
+        }
+        .navigation {
+            margin-top: 0;
+        }
+        .navigation li {
+            margin: 0 3rem;
+        }
+        .navigation ul {
+            margin: 0;
+        }
+        #portfolio img {
+            margin: .5rem 0 !important;
+        }
+        .desktop-hide {
+            display: none;
+        }
+        #aboutImg {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .logo {
+            display: block;
+        }
+        #hero {
+            height: 700px;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+    
+        h2 {
+            font-size: 1.75rem;
+        }
+        .padding-sides {
+            padding: 0 5rem 5rem 5rem;
+        }
+        .padding-center {
+            padding: 4rem;
+        }
+        .padding-med {
+            padding: 4rem 5rem;
+        }
+        .padding-lg {
+            padding: 2rem 6rem;
+        }
+        .mobile-hide {
+            display: block;
+        }
+        .hero-box {
+            padding: 1rem;
+        }
+        .publications-list {
+            padding-left: 5rem;
+        }
+        #portfolio img {
+            margin-left: 1rem;
+        }
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        .social-icons li {
+            margin: 0 1rem;
+        }
+        .card--portfolio {
+            margin: 4rem 1rem;
+        }
+        #aboutImg {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 7rem;
+            margin-left: 4rem;
+        }
+        @media screen and (min-width: 1440px) {
+            .publications-list {
+                padding-left: 12rem;
+            }
+        }
+
+        /*Portfolio Styles*/
+        .card--portfolio {
+            margin: 3rem 1rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+            height: 550px;
+        }
+    }
